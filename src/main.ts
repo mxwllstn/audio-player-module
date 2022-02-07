@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const vues = document.querySelectorAll('audio-player')
+vues.forEach(vue => createApp(App).mount(vue))
