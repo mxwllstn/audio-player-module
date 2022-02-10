@@ -13,12 +13,12 @@ export default defineComponent({
   data() {
     return {
       src: undefined as string | undefined,
-      stream: undefined as string | undefined
+      stream: undefined as boolean | undefined
     }
   },
   mounted() {
     this.src = this.$el.parentElement.getAttribute('src')
-    this.stream = this.$el.parentElement.getAttribute('stream')
+    this.stream = !!this.$el.parentElement.getAttribute('stream')
   }
 })
 </script>
