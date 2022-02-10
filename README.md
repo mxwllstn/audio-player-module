@@ -3,13 +3,17 @@ JS module for embedding audio files and streams
 
 ## Usage
 
-#### Component
+#### HTML
 ```html
-  <!-- audio file player -->
-  <audio-player src="https://test.com/file.mp3"></audio-player>
-  
-  <!-- audio stream player -->
-  <audio-player src="https://test.com/stream" stream></audio-player>
+  <body>
+    <!-- audio file player -->
+    <audio-player src="https://test.com/file.mp3"></audio-player>
+    
+    <!-- audio stream player -->
+    <audio-player src="https://test.com/stream" stream></audio-player>
+    
+    <script type="module" src="dist/audio-player.es.js"></script>
+  </body>
 ```
 
 ## Development Setup (Vue + Vite)
